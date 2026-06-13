@@ -41,17 +41,18 @@ from xxlimited import new
 # Q3 Check if a number is palindromic (equal to its reverse)
 n = int(input("Enter a number : "))
 
-original = n;
+original = n
 
-reverse = 0;
+reverse = 0
 
 while(n > 0):
-    lastDigit = n % 10;
-    reverse = reverse * 10 + lastDigit;
-    n //= 10;
+    lastDigit = n % 10
+    reverse = reverse * 10 + lastDigit
+    n //= 10
 
 if original == reverse:
     print(f"{original} is a palindrome!")
 else:
     print(f"{original} is not a palindrome!")
+
 
